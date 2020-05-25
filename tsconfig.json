@@ -1,0 +1,32 @@
+{
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "lib": [
+      "ES2017",
+      "ES2018"
+    ],
+    "declaration": false,
+    "sourceMap": false,
+    "outDir": "c:/npm/@limo/eslint-config/lib",
+    "rootDir": "./src",
+    "removeComments": false,
+    "noEmit": false,
+    "isolatedModules": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": false,
+    "skipLibCheck": false,
+    "types": ["node"]
+  }
+}
