@@ -8,6 +8,10 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@factory"
+    },
+    {
+      "syntaxKind": "modifier",
+      "tagName": "@default"
     }
   ]
 }
