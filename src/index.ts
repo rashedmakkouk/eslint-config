@@ -55,6 +55,7 @@ module.exports = {
       files: ['*'],
       rules: {
         '@typescript-eslint/ban-types': 'off',
+        '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-member-accessibility': 'off',
         '@typescript-eslint/indent': [0, 2],
         // TODO: eslint v3 `https://github.com/typescript-eslint/typescript-eslint/releases/tag/v3.0.0`
@@ -74,13 +75,13 @@ module.exports = {
           //   selector: 'variable',
           // },
           {
-            format: ['camelCase', 'UPPER_CASE'],
+            format: ['camelCase', 'UPPER_CASE', 'snake_case'],
             leadingUnderscore: 'allow',
             selector: 'variable',
             trailingUnderscore: 'allow',
           },
           {
-            format: ['camelCase'],
+            format: ['camelCase', 'snake_case'],
             selector: 'parameter',
           },
           {
@@ -103,7 +104,7 @@ module.exports = {
             selector: 'class',
           },
           {
-            format: ['strictCamelCase'],
+            format: ['PascalCase', 'strictCamelCase'],
             leadingUnderscore: 'allow',
             selector: 'function',
           },
