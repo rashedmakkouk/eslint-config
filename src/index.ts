@@ -1,7 +1,6 @@
 const PRINT_WIDTH = 80;
 
 const allowVariables = [
-  'invitation_id',
   'membership_id',
   'reported_type',
   'reported_id',
@@ -75,7 +74,7 @@ module.exports = {
           //   selector: 'variable',
           // },
           {
-            format: ['camelCase', 'UPPER_CASE', 'snake_case'],
+            format: ['camelCase', 'UPPER_CASE', 'snake_case', 'PascalCase'],
             leadingUnderscore: 'allow',
             selector: 'variable',
             trailingUnderscore: 'allow',
@@ -93,12 +92,25 @@ module.exports = {
             selector: 'typeParameter',
             suffix: ['T'],
           },
-          {
-            format: ['PascalCase'],
-            prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-            selector: 'variable',
-            types: ['boolean'],
-          },
+          // {
+          //   format: ['PascalCase'],
+          //   prefix: [
+          //     'allow',
+          //     'can',
+          //     'did',
+          //     'disable',
+          //     'enable',
+          //     'has',
+          //     'in',
+          //     'is',
+          //     'should',
+          //     'will',
+          //     'with',
+          //     'visible',
+          //   ],
+          //   selector: 'variable',
+          //   types: ['boolean'],
+          // },
           {
             format: ['StrictPascalCase'],
             selector: 'class',
@@ -115,7 +127,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/no-var-requires': 'warn',
-        '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/prefer-optional-chain': 'warn',
         'arrow-parens': ['warn', 'always'],
         camelcase: 'off',
