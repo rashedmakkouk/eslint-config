@@ -116,7 +116,7 @@ module.exports = {
             selector: 'class',
           },
           {
-            format: ['PascalCase', 'strictCamelCase'],
+            format: ['PascalCase', 'camelCase'],
             leadingUnderscore: 'allow',
             selector: 'function',
           },
@@ -185,7 +185,7 @@ module.exports = {
       unicodeCodePointEscapes: true,
     },
     ecmaVersion: 2019,
-    project: './tsconfig.json',
+    // project: './tsconfig.json',
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
