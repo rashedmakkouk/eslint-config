@@ -1,27 +1,19 @@
 const PRINT_WIDTH = 80;
 
 const allowVariables = [
-  'membership_id',
-  'reported_type',
-  'reported_id',
   'ticket_no',
   'year_suffix',
   'original_url',
   'real_ip',
   'user_agent',
   'x_forwarded_for',
-  'cursor_id',
   'disable_comments',
   'display_name',
   'photo_album',
-  'field_column',
-  'type_column',
   'member_id',
   'edition_type',
   'first_name',
   'last_name',
-  'friends_of_friends',
-  'only_me',
   'collectible_type',
   'collectible_types',
   'alpha_dash_space',
@@ -33,6 +25,8 @@ const allowVariables = [
   'user_id',
   'birth_date',
   'serial_no',
+  'node_id',
+  'node_type',
 ];
 
 module.exports = {
@@ -112,7 +106,7 @@ module.exports = {
           //   types: ['boolean'],
           // },
           {
-            format: ['StrictPascalCase'],
+            format: ['PascalCase'],
             selector: 'class',
           },
           {

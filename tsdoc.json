@@ -12,6 +12,10 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@default"
+    },
+    {
+      "syntaxKind": "modifier",
+      "tagName": "@static"
     }
   ]
 }
