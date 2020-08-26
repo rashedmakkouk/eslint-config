@@ -16,6 +16,10 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@static"
+    },
+    {
+      "syntaxKind": "modifier",
+      "tagName": "@access"
     }
   ]
 }
