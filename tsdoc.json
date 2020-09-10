@@ -20,6 +20,14 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@access"
+    },
+    {
+      "syntaxKind": "modifier",
+      "tagName": "@description"
+    },
+    {
+      "syntaxKind": "modifier",
+      "tagName": "@internal"
     }
   ]
 }
