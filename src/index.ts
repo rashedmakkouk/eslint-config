@@ -10,7 +10,6 @@ const allowVariables = [
   'disable_comments',
   'display_name',
   'photo_album',
-  'member_id',
   'edition_type',
   'first_name',
   'last_name',
@@ -22,7 +21,6 @@ const allowVariables = [
   'alpha_space',
   'last_seen',
   'group_name',
-  'user_id',
   'birth_date',
   'serial_no',
   'node_id',
@@ -127,6 +125,8 @@ module.exports = {
         camelcase: 'off',
         'import/named': 'warn',
         'import/namespace': 'off',
+        'import/no-unresolved': 'off',
+        // 'import/no-unresolved': ['off', { ignore: ['uuid/v4'] }],
         'prettier/prettier': [
           'warn',
           {
