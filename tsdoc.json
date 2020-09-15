@@ -24,10 +24,6 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@description"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@internal"
     }
   ]
 }

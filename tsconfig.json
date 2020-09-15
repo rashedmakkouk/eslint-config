@@ -1,7 +1,4 @@
 {
-  "exclude": [
-    "node_modules"
-  ],
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2019",
@@ -9,9 +6,11 @@
       "ES2017",
       "ES2018"
     ],
-    "declaration": false,
-    "sourceMap": false,
-    "outDir": "c:/npm/@limo/eslint-config/lib",
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist/lib",
     "rootDir": "./src",
     "removeComments": false,
     "noEmit": false,
@@ -27,6 +26,14 @@
     "resolveJsonModule": true,
     "noEmitOnError": false,
     "skipLibCheck": false,
-    "types": ["node"]
-  }
+    "types": [
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "docs"
+  ]
 }

@@ -17,7 +17,11 @@
   ],
   "extends": [
     "plugin:prettier/recommended",
-    "plugin:import/typescript"
+    // "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "prettier/prettier": [
@@ -52,5 +56,15 @@
       }
     ],
     "tsdoc/syntax": 1
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [ ".ts", ".tsx" ]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
