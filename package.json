@@ -1,17 +1,19 @@
 {
   "name": "@limo/eslint-config",
   "version": "1.04.13",
-  "description": "ESLint rules configuration for @limo",
-  "author": "aR",
+  "description": "Linting rules & generic configuration for @limo app.",
+  "author": "Rashed Makkouk",
+  "displayName": "@limo/eslint-config",
   "license": "UNLICENSED",
   "private": true,
   "main": "lib/index.js",
-  "types": "@types/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "tsc-w": "tsc --watch",
-    "copyPackage": "cp -r ./{package.json,yarn.lock,tsdoc.json,CHANGELOG.md,README.md,.markdownlint.json} c:/npm/@limo/eslint-config/",
-    "removePackage": "rm -rf c:/npm/@limo/eslint-config/{@types,lib}",
-    "build": "yarn removePackage && yarn copyPackage && tsc --skipLibCheck",
+    "build-delete": "rm -rf ./dist/*",
+    "copy-meta": "cp -r ./{package.json,yarn.lock,CHANGELOG.md,README.md,LICENSE,tsdoc.json,.markdownlint.json} ./dist/",
+    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/* c:/npm/@limo/eslint-config/",
+    "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn publish-npm",
     "uP": "yarn upgrade --latest"
   },
   "keywords": [
@@ -24,10 +26,10 @@
     "env"
   ],
   "devDependencies": {
-    "@types/node": "^14.6.4",
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
-    "eslint": "^7.8.1",
+    "@types/node": "^14.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -38,9 +40,9 @@
   },
   "peerDependencies": {
     "@limo/types": "c:/npm/@limo/types",
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
-    "eslint": "^7.8.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
