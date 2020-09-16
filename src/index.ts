@@ -123,7 +123,7 @@ module.exports = {
         '@typescript-eslint/prefer-optional-chain': 'warn',
         'arrow-parens': ['warn', 'always'],
         camelcase: 'off',
-        'import/named': 'warn',
+        'import/named': 'off',
         'import/namespace': 'off',
         'import/no-unresolved': 'off',
         // 'import/no-unresolved': ['off', { ignore: ['uuid/v4'] }],
