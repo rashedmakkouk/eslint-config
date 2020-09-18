@@ -1,9 +1,9 @@
 {
-  "name": "@limo/dev-config",
-  "version": "1.04.13",
+  "name": "@limo/eslint-config",
+  "version": "1.09.02",
   "description": "Linting rules & generic configuration for @limo app.",
   "author": "Rashed Makkouk",
-  "displayName": "@limo/dev-config",
+  "displayName": "@limo/eslint-config",
   "license": "UNLICENSED",
   "private": true,
   "main": "lib/index.js",
@@ -12,7 +12,7 @@
     "tsc-w": "tsc --watch",
     "build-delete": "rm -rf ./dist/* && rm -rf ./dist/.[!.]*",
     "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE,tsdoc.json,.markdownlint.json,.gitmessage.txt} ./dist/",
-    "publish-npm": "rm -rf c:/npm/@limo/dev-config/* && rm -rf c:/npm/@limo/dev-config/.[!.]* && cp -r ./dist/. c:/npm/@limo/dev-config/",
+    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && rm -rf c:/npm/@limo/eslint-config/.[!.]* && cp -r ./dist/. c:/npm/@limo/eslint-config/",
     "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn publish-npm",
     "uP": "yarn upgrade --latest"
   },
@@ -30,7 +30,7 @@
     "env"
   ],
   "devDependencies": {
-    "@types/node": "^14.10.1",
+    "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
@@ -39,11 +39,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.7",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@limo/types": "c:/npm/@limo/types",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
@@ -52,7 +51,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.7",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.2"
   }
 }
