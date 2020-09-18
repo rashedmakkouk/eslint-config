@@ -1,23 +1,27 @@
 {
-  "name": "@limo/eslint-config",
+  "name": "@limo/dev-config",
   "version": "1.04.13",
   "description": "Linting rules & generic configuration for @limo app.",
   "author": "Rashed Makkouk",
-  "displayName": "@limo/eslint-config",
+  "displayName": "@limo/dev-config",
   "license": "UNLICENSED",
   "private": true,
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "scripts": {
     "tsc-w": "tsc --watch",
-    "build-delete": "rm -rf ./dist/*",
-    "copy-meta": "cp -r ./{package.json,yarn.lock,CHANGELOG.md,README.md,LICENSE,tsdoc.json,.markdownlint.json} ./dist/",
-    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/* c:/npm/@limo/eslint-config/",
+    "build-delete": "rm -rf ./dist/* && rm -rf ./dist/.[!.]*",
+    "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE,tsdoc.json,.markdownlint.json,.gitmessage.txt} ./dist/",
+    "publish-npm": "rm -rf c:/npm/@limo/dev-config/* && rm -rf c:/npm/@limo/dev-config/.[!.]* && cp -r ./dist/. c:/npm/@limo/dev-config/",
     "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn publish-npm",
     "uP": "yarn upgrade --latest"
   },
   "keywords": [
     "eslint",
+    "typedoc",
+    "tsdoc",
+    "git",
+    "md",
     "prettier",
     "linting",
     "@limo"

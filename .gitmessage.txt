@@ -1,0 +1,26 @@
+# --- COMMIT START ---
+#
+# Subject
+# <type>: <Subject summary>
+#
+# Limit to 50 charachters
+# Start with a capital letter
+# Do not end with a period
+# Use the imperative mood
+#
+# Body
+# <type: <Task summary>
+# Use the body to explain what and why versus how
+# Use multiple lines to explain different tasks
+# Use "-" for bullet points per line
+# Wrap at 80 charachters
+# Provide links or keys to relevant issues or tickets
+#
+# --- COMMIT END ---
+#
+# Resources
+#
+# Refer to 'Version Control' guidelines for a list of available commit <type>s
+# you may use.
+#
+# http://192.168.1.240/org/activities/-/blob/master/docs/guidelines/version-control.md

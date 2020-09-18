@@ -1,4 +1,4 @@
-# @limo/eslint-config - Documentation
+# @limo/dev-config - Documentation
 
 Package includes all implemenations and linting rules to provide a standardized
 coding experience across projects and packages.
@@ -23,3 +23,7 @@ TypeScript comments linting rules.
 ### MarkdownLint
 
 Code styling standards.
+
+### Git
+
+Git commit templates and guidelines.
