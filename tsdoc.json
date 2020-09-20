@@ -1,29 +1,4 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
-  "tagDefinitions": [
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@abstract"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@factory"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@default"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@static"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@access"
-    },
-    {
-      "syntaxKind": "modifier",
-      "tagName": "@description"
-    }
-  ]
+  "extends": ["./src/config/tsdoc.base.json"]
 }
