@@ -1,11 +1,12 @@
 {
   "extends": "./src/config/tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./dist/types",
-    "outDir": "./dist/lib",
+    "baseUrl": ".",
     "rootDir": "./src",
-    "baseUrl": "./",
+    "outDir": "./dist/lib",
+    "declarationDir": "./dist/types",
+    "declaration": true,
+    "declarationMap": true
   },
   "exclude": [
     "node_modules",
