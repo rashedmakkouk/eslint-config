@@ -1,34 +1,35 @@
 {
   "name": "@limo/eslint-config",
-  "version": "1.09.02",
+  "version": "0.2.0",
   "description": "Linting rules & generic configuration for @limo app.",
-  "author": "Rashed Makkouk",
   "displayName": "@limo/eslint-config",
+  "author": "Rashed Makkouk <rashed.makkouk@outlook.com>",
   "license": "UNLICENSED",
   "private": true,
-  "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "tsc-w": "tsc --watch",
     "build-delete": "rm -rf ./dist/* && rm -rf ./dist/.[!.]*",
-    "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE} ./src/config/{.,*} ./dist/",
-    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && rm -rf c:/npm/@limo/eslint-config/.[!.]* && cp -r ./dist/. c:/npm/@limo/eslint-config/",
-    "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn publish-npm",
+    "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE} ./dist",
+    "copy-files": "mkdir .\\dist\\lib\\bases && cp -r ./src/bases/{.,*} ./dist/lib/bases/",
+    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/. c:/npm/@limo/eslint-config/",
+    "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn copy-files && yarn publish-npm",
     "uP": "yarn upgrade --latest"
   },
   "keywords": [
-    "eslint",
-    "typedoc",
-    "tsdoc",
-    "git",
+    "ESLint",
+    "TypeDoc",
+    "TypeScript",
+    "TSDoc",
+    "Git",
     "md",
-    "prettier",
-    "linting",
-    "@limo"
+    "Markdown",
+    "Prettier",
+    "vscode",
+    "lint"
   ],
-  "presets": [
-    "env"
-  ],
+  "presets": [ "env" ],
   "devDependencies": {
     "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",

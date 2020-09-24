@@ -1,4 +1,4 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
-  "extends": ["./src/config/tsdoc.base.json"]
+  "extends": ["./src/bases/tsdoc.base.json"]
 }

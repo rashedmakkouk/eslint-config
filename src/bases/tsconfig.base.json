@@ -4,9 +4,10 @@
     "target": "ES2019",
     "lib": [
       "ES2017",
-      "ES2018"
+      "ES2018",
+	    "ES2019"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "rootDir": "./src",
     "outDir": "./dist/lib",
     "declaration": false,
@@ -24,6 +25,7 @@
     "resolveJsonModule": true,
     "noEmitOnError": false,
     "skipLibCheck": false,
+	  "experimentalDecorators": true,
     "types": [
       "node"
     ]

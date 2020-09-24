@@ -1,1 +1,1 @@
-# @limo/eslint-config
+# org / eslint-config

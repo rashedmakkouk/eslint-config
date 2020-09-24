@@ -1,0 +1,200 @@
+{
+  // "folders": [
+  //   {
+  //     "path": "..\\path\\to\\folder"
+  //   }
+  // ],
+  "settings": {
+    // "typescript.tsdk": "C:/~/AppData/Roaming/npm/node_modules/typescript/lib",
+    "files.associations": {
+      "*.json": "jsonc",
+      "*.gql": "graphql",
+      "*.graphql": "graphql"
+    },
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.mouseWheelZoom": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.wrappingIndent": "none",
+    "editor.insertSpaces": true,
+    "editor.emptySelectionClipboard": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "eslint.workingDirectories": [
+      { "mode": "auto" }
+    ],
+    "typescript.suggest.autoImports": true,
+    "typescript.suggest.completeFunctionCalls": false,
+    "typescript.suggest.completeJSDocs": true,
+    "typescript.suggest.enabled": true,
+    "typescript.suggest.paths": true,
+    "typescript.suggestionActions.enabled": true,
+    "javascript.suggest.autoImports": true,
+    "[graphql]": {},
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "eslint.packageManager": "yarn",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "alt",
+    "editor.fontSize": 14,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "blink",
+    "files.autoSave": "onWindowChange",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "typescript.tsc.autoDetect": "off",
+    "typescript.referencesCodeLens.enabled": false,
+    "typescript.reportStyleChecksAsWarnings": false,
+    "terminal.integrated.rendererType": "canvas",
+    "breadcrumbs.enabled": true,
+    "typescript.locale": "en",
+    "typescript.surveys.enabled": false,
+    "debug.toolBarLocation": "docked",
+    "typescript.check.npmIsInstalled": true,
+    "typescript.disableAutomaticTypeAcquisition": false,
+    "javascript.validate.enable": false,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "debug.inlineValues": true,
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true,
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/.next": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/build": true,
+      "**/dist": true,
+      "**/logs/": true,
+      "**/storage/": true
+    },
+    "editor.formatOnSave": false,
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.markdownlint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+      "typescript"
+    ],
+    "eslint.options": {
+      "extensinons": [
+        ".ts",
+        ".html"
+      ]
+    },
+    "php.validate.enable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "less.validate": false,
+    "html.validate.styles": false,
+    "html.validate.scripts": false,
+    "files.autoSaveDelay": 1500,
+    "editor.foldingStrategy": "indentation",
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    "workbench.list.multiSelectModifier": "alt",
+    "java.completion.importOrder": [
+			"java",
+			"javax",
+			"com",
+			"org"
+		],
+    "todohighlight.isEnable": true,
+    "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/android/**",
+      "**/ios/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/logs/**",
+      "**/storage/**"
+    ],
+    "todohighlight.include": [
+      "**/*.ts",
+      "**/*.tsx"
+    ],
+    "todohighlight.defaultStyle": {
+      "color": "#fff",
+      "backgroundColor": "transparent",
+      "border": "1px solid",
+      "borderRadius": "4px",
+      "isWholeLine": false
+    },
+    "todohighlight.keywords": [
+      {
+        "text": " IMPORTANT: ",
+        "color": "#fff",
+        "borderColor": "#fff"
+      },
+      {
+        "text": " FIX: ",
+        "color": "#ef5350",
+        "borderColor": "#ef5350"
+      },
+      {
+        "text": "TODO:",
+        "color": "#ff9800",
+        "borderColor": "#ff9800",
+        "backgroundColor": "transparent"
+      },
+      {
+        "text": " TODO: ",
+        "color": "#ff9800",
+        "borderColor": "#ff9800"
+      },
+      {
+        "text": " ISSUE: ",
+        "color": "#ff9800",
+        "borderColor": "#ff9800"
+      },
+      {
+        "text": " QUALITY: ",
+        "color": "#66bb6a",
+        "borderColor": "#66bb6a"
+      },
+      {
+        "text": " BRANDING: ",
+        "color": "#9a67ea",
+        "borderColor": "#9a67ea"
+      },
+      {
+        "text": " SPIKE: ",
+        "color": "#8eacbb",
+        "borderColor": "#8eacbb"
+      },
+      {
+        "text": " STEP: ",
+        "color": "#e0f7fa",
+        "borderColor": "#e0f7fa"
+      },
+      {
+        "text": " NOTE: ",
+        "color": "#fff59d",
+        "borderColor": "#fff59d"
+      },
+      {
+        "text": " DOCS: ",
+        "color": "#42a5f5",
+        "borderColor": "#42a5f5"
+      }
+    ]
+  }
+}

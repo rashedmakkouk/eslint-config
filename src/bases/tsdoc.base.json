@@ -24,6 +24,10 @@
     {
       "syntaxKind": "modifier",
       "tagName": "@description"
+    },
+	  {
+      "syntaxKind": "modifier",
+      "tagName": "@format"
     }
   ]
 }
