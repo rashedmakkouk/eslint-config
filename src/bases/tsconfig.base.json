@@ -1,4 +1,6 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended",
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2019",
@@ -29,5 +31,15 @@
     "types": [
       "node"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "build",
+    "**/build",
+    "dist",
+    "**/dist",
+    "**/*.config.js",
+    "**/*.spec.ts"
+  ]
 }

@@ -10,7 +10,8 @@
     "noEmit": false
   },
   "include": [
-    "./src",
-    "index.ts"
+    "src/**/*",
+    "index.ts",
+    "index.d.ts"
   ]
 }
