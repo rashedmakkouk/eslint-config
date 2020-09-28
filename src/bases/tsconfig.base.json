@@ -7,7 +7,8 @@
     "lib": [
       "ES2017",
       "ES2018",
-	    "ES2019"
+      "ES2019",
+      "ESNext"
     ],
     "baseUrl": "./",
     "rootDir": "./src",
@@ -33,13 +34,12 @@
     ]
   },
   "exclude": [
-    "node_modules",
     "**/node_modules",
-    "build",
     "**/build",
-    "dist",
     "**/dist",
-    "**/*.config.js",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "**/scripts",
+    "**/__mocks__",
+    "**/__tests__"
   ]
 }

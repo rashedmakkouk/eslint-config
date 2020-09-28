@@ -110,12 +110,12 @@
     "editor.unfoldOnClickAfterEndOfLine": true,
     "workbench.list.multiSelectModifier": "alt",
     "java.completion.importOrder": [
-			"java",
-			"javax",
-			"com",
-			"org"
-		],
-    "todohighlight.isEnable": true,
+	  "java",
+	  "javax",
+	  "com",
+	  "org"
+	],
+	"todohighlight.isEnable": true,
     "todohighlight.exclude": [
       "**/node_modules/**",
       "**/android/**",
