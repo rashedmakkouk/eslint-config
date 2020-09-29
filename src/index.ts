@@ -116,7 +116,18 @@ module.exports = {
         ],
         '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-floating-promises': [
+          'warn',
+          { ignoreVoid: true },
+        ],
+        '@typescript-eslint/no-for-in-array': 'warn',
         '@typescript-eslint/no-inferrable-types': 'warn',
+        '@typescript-eslint/no-misused-promises': [
+          'error',
+          {
+            checksVoidReturn: false,
+          },
+        ],
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-call': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -133,6 +144,7 @@ module.exports = {
         'import/named': 'off',
         'import/namespace': 'off',
         'import/no-unresolved': 'off',
+        'no-void': ['warn', { allowAsStatement: true }],
         // 'import/no-unresolved': ['off', { ignore: ['uuid/v4'] }],
         'prettier/prettier': [
           'warn',
@@ -185,6 +197,7 @@ module.exports = {
       unicodeCodePointEscapes: true,
     },
     ecmaVersion: 2019,
+    project: './tsconfig.json',
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],

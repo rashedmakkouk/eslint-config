@@ -13,8 +13,8 @@
     "build-delete": "rm -rf ./dist/* && rm -rf ./dist/.[!.]*",
     "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE} ./dist",
     "copy-files": "mkdir .\\dist\\lib\\bases && cp -r ./src/bases/{.,*} ./dist/lib/bases/",
-    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/. c:/npm/@limo/eslint-config/",
-    "build": "yarn build-delete && tsc --skipLibCheck && yarn copy-meta && yarn copy-files && yarn publish-npm",
+    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/* c:/npm/@limo/eslint-config/",
+    "build": "yarn build-delete && yarn copy-meta && tsc --skipLibCheck && yarn copy-files && yarn publish-npm",
     "uP": "yarn upgrade --latest"
   },
   "keywords": [
@@ -29,14 +29,16 @@
     "vscode",
     "lint"
   ],
-  "presets": [ "env" ],
+  "presets": [
+    "env"
+  ],
   "devDependencies": {
-    "@types/node": "^14.11.1",
-    "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
-    "eslint": "^7.9.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.7",

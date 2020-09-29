@@ -7,8 +7,7 @@
     "lib": [
       "ES2017",
       "ES2018",
-      "ES2019",
-      "ESNext"
+      "ES2019"
     ],
     "baseUrl": "./",
     "rootDir": "./src",
