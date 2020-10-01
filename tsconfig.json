@@ -3,15 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "rootDir": "./src",
-    "outDir": "./dist/lib",
-    "declarationDir": "./dist/types",
+    "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
     "noEmit": false
   },
   "include": [
-    "src/**/*",
-    "index.ts",
-    "index.d.ts"
+    "src/**/*"
   ]
 }

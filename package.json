@@ -1,21 +1,23 @@
 {
   "name": "@limo/eslint-config",
   "version": "0.2.0",
-  "description": "Linting rules & generic configuration for @limo app.",
+  "description": "Opinionated linting rules & configuration.",
   "displayName": "@limo/eslint-config",
   "author": "Rashed Makkouk <rashed.makkouk@outlook.com>",
   "license": "UNLICENSED",
   "private": true,
-  "main": "./lib/index.js",
-  "types": "./types/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "tsc-w": "tsc --watch",
-    "build-delete": "rm -rf ./dist/* && rm -rf ./dist/.[!.]*",
-    "copy-meta": "cp -r ./{package.json,yarn.lock,README.md,LICENSE} ./dist",
-    "copy-files": "mkdir .\\dist\\lib\\bases && cp -r ./src/bases/{.,*} ./dist/lib/bases/",
-    "publish-npm": "rm -rf c:/npm/@limo/eslint-config/* && cp -r ./dist/* c:/npm/@limo/eslint-config/",
-    "build": "yarn build-delete && yarn copy-meta && tsc --skipLibCheck && yarn copy-files && yarn publish-npm",
-    "uP": "yarn upgrade --latest"
+    "empty-build": "rm -rf c:/npm/@limo/eslint-config/*",
+    "build-metadata": "cp -r ./{package.json,yarn.lock,README.md,LICENSE} c:/npm/@limo/eslint-config",
+    "build-package": "cp -r ./dist c:/npm/@limo/eslint-config",
+    "empty-dist": "rm -rf ./dist/*",
+    "dist-files": "cp -r ./src/bases ./dist",
+    "compile": "tsc --build",
+    "build": "npm run empty-dist && npm run compile && npm run dist-files && npm run empty-build && npm run build-metadata && npm run build-package",
+    "uP": "yarn upgrade --latest",
+    "tsc": "tsc"
   },
   "keywords": [
     "ESLint",
@@ -43,7 +45,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-tsdoc": "^0.2.7",
     "prettier": "^2.1.2",
-    "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "peerDependencies": {
