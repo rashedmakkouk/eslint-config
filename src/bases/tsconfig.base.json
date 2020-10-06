@@ -9,11 +9,8 @@
       "ES2018",
       "ES2019"
     ],
-    "baseUrl": ".",
-    "rootDir": "src",
-    "outDir": "dist",
     "declaration": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "removeComments": false,
     "noEmit": false,
     "isolatedModules": false,
@@ -27,7 +24,7 @@
     "resolveJsonModule": true,
     "noEmitOnError": false,
     "skipLibCheck": false,
-	  "experimentalDecorators": true,
+	"experimentalDecorators": true,
     "types": [
       "node"
     ]
