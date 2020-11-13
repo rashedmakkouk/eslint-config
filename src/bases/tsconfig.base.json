@@ -33,9 +33,8 @@
     "**/node_modules",
     "**/build",
     "**/dist",
-    "**/*.config.ts",
-    "**/*.spec.ts",
-    "**/scripts",
+    "**/*.config.*",
+    "**/*.spec.*",
     "**/__mocks__",
     "**/__tests__"
   ]

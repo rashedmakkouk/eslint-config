@@ -120,7 +120,8 @@ module.exports = {
           'warn',
           { ignoreVoid: true },
         ],
-        '@typescript-eslint/no-for-in-array': 'warn',
+        /** Use array destructuring [index, data] Object.entries(obj) instead. */
+        '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-inferrable-types': 'warn',
         '@typescript-eslint/no-misused-promises': [
           'error',
