@@ -2,9 +2,9 @@
 #
 node_modules
 build
-yarn-error.log
 
-# Development
+# Files
 #
-*.bak
 *.code-workspace
+*.bak
+yarn-error.log

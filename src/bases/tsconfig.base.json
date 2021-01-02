@@ -23,19 +23,10 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noEmitOnError": false,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
 	"experimentalDecorators": true,
     "types": [
       "node"
     ]
-  },
-  "exclude": [
-    "**/node_modules",
-    "**/build",
-    "**/dist",
-    "**/*.config.*",
-    "**/*.spec.*",
-    "**/__mocks__",
-    "**/__tests__"
-  ]
+  }
 }
