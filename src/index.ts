@@ -197,7 +197,7 @@ module.exports = {
       templateStrings: true,
       unicodeCodePointEscapes: true,
     },
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
     project: './tsconfig.json',
     sourceType: 'module',
   },
@@ -262,5 +262,15 @@ module.exports = {
       },
     ],
     'tsdoc/syntax': 'warn',
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };

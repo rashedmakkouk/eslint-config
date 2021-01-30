@@ -1,18 +1,38 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module",
     "ecmaFeatures": {
-      "modules": true
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": true,
+      "jsx": false,
+      "module": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": true,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "regexUFlag": true,
+      "regexYFlag": true,
+      "restParams": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true,
+      "unicodeCodePointEscapes": true,
     },
-    "project": "./tsconfig.json"
+    "ecmaVersion": 2020,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
   },
   "env": {
     "es6": true
   },
   "plugins": [
     "prettier",
+    "@typescript-eslint",
     "eslint-plugin-tsdoc"
   ],
   "extends": [

@@ -1,16 +1,19 @@
 {
   "extends": "./src/bases/tsconfig.base.json",
+  "display": "Node Package",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "build",
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+	  "target": "ES6"
   },
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
   "include": [
     "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }

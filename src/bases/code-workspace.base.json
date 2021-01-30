@@ -33,7 +33,6 @@
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.fontSize": 12,
     "files.associations": {
-
       "*.json": "jsonc"
     },
     "files.exclude": {
@@ -53,14 +52,13 @@
     "**/build/**": true,
     "**/dist/**": true,
     "**/windows/**": true,
-    "**/docs/**": true,
     "**/assets/**": true,
     "**/res/**": true,
     "**/android/.gradle/**": true,
-    "**/android/.idea/**": true
+    "**/android/.idea/**": true,
+    "**/.docusaurus/**": true
   },
     "editor.formatOnSave": false,
-    "eslint.enable": true,
     "eslint.run": "onType",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
@@ -81,15 +79,12 @@
     "todohighlight.isEnable": true,
     "todohighlight.exclude": [
       "**/node_modules/**",
-      "**/android/**",
-      "**/ios/**",
-      "**/windows/**",
-      "**/dist/**",
       "**/build/**",
+      "**/dist/**",
+      "**/windows/**",
+      "**/assets/**",
       "**/.vscode/**",
-      "**/.github/**",
-      "**/docs/**",
-      "**/assets/**"
+      "**/.docusaurus/**"
     ],
     "todohighlight.include": [
       "**/*.ts",
@@ -160,17 +155,16 @@
         "borderColor": "#42a5f5",
       },
     ],
-    "files.autoSaveDelay": 1500,
     "workbench.list.multiSelectModifier": "alt",
-    "emmet.syntaxProfiles": {
-    
-    },
-    "editor.multiCursorModifier": "ctrlCmd",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"files.autoSaveDelay": 1500,
+	"java.dependency.refreshDelay": 300,
     "java.project.resourceFilters": [
-    
       "node_modules",
       ".git"
-    ]
+    ],
+	"javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.importModuleSpecifier": "relative"
   },
   "folders": [
 	{
