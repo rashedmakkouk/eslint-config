@@ -42,6 +42,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
+  ignorePatterns: ['.eslintrc.js', '.eslintrc.json'],
   overrides: [
     {
       files: ['*'],

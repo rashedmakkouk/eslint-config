@@ -21,7 +21,7 @@
       "spread": true,
       "superInFunctions": true,
       "templateStrings": true,
-      "unicodeCodePointEscapes": true,
+      "unicodeCodePointEscapes": true
     },
     "ecmaVersion": 2020,
     "project": "./tsconfig.json",
@@ -42,6 +42,10 @@
     "plugin:import/typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": [
+    ".eslintrc.js",
+    ".eslintrc.json"
   ],
   "rules": {
     "prettier/prettier": [
