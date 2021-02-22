@@ -1,6 +1,59 @@
 # Changelog
 
-> Go back to [Versions](../index.md#010-2020-10-01)
+> Go back to [Versions](../index.md#040-in-development)
+
+## 0.4.0 (2021-02-22)
+
+### Changed
+
+- upgrade: Bump package version from `0.3.0` to `0.4.0`
+- deprecated: Remove `docs` directory in favor of `README` file
+- refactor: Migrate `versions` to `CHANGELOG`
+- chore: Clean up `code-workspace.base.json` config file
+- chore: Removed deprecated vendor plugin API
+- upgrade: Package dependencies --latest
+
+## 0.4.0 (2021-01-30)
+
+### Changed
+
+- chore: Migrate build script to standalone 'scripts'
+- upgrade: Yarn to v2
+- chore: Update package config files
+
+## 0.3.0 (2020-12-20)
+
+### Changed
+
+- update: Bump package version to `0.3.0`
+- chore: Update `code-workspace.base.json` config file
+- upgrade: Package `devDependencies` --latest
+
+## 0.2.0 (2020-10-06)
+
+### Added
+
+- feature: Add `issue-template.base` base file
+
+### Changed
+
+- upgrade: Package dependencies --latest
+
+## 0.2.0 (2020-10-04)
+
+### Added
+
+- chore: Add `@property` modifier to `tsdoc`
+- chore: Add `repository` property to `package.json`
+
+### Changed
+
+- refactor: Update package configuration files
+- refactor: Update local build scripts
+
+### Removed
+
+- chore: Remove default `rootDir` & `baseUrl` values from `tsconfig.base.json`
 
 ## 0.1.0 (2020-09-30)
 

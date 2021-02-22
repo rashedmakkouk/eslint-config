@@ -1,26 +1,25 @@
 # --- COMMIT START ---
 #
-# Subject
-# <type>: <Subject summary>
+# TITLE
 #
-# Limit to 50 charachters
-# Start with a capital letter
-# Do not end with a period
-# Use the imperative mood
+# > Overview title when summary or changelog is available:
 #
-# Body
-# <type: <Task summary>
-# Use the body to explain what and why versus how
-# Use multiple lines to explain different tasks
-# Use "-" for bullet points per line
-# Wrap at 80 charachters
-# Provide links or keys to relevant issues or tickets
+# Add new features [client, components]
+#
+# > A commit entry if a single line is provided:
+#
+# <type>: Fix bug in 'get' query results [core, server]
+#
+# BODY
+#
+# Summary:
+#
+# - Implement xyz feature in the front-end & back-end
+#
+# Changelog:
+#
+# - chore: Add abc & xyz support in 'Some' component; closes #456
+# - enhancement: Implement new functionality in 'Other' component
+# - bug: Fix invite self regression in 'invite' resolver; fixes #123
 #
 # --- COMMIT END ---
-#
-# Resources
-#
-# Refer to 'Version Control' guidelines for a list of available commit <type>s
-# you may use.
-#
-# http://~/org/organization/-/blob/master/docs/guidelines/version-control.md

@@ -1,43 +1,91 @@
 {
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
   "settings": {
     // "typescript.tsdk": "C:/Users/rashe/AppData/Roaming/npm/node_modules/typescript/lib",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "eslint.packageManager": "yarn",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.rendererType": "canvas",
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": true,
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.list.multiSelectModifier": "alt",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.mouseWheelZoom": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.wrappingIndent": "none",
+    "editor.insertSpaces": true,
+    "editor.emptySelectionClipboard": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.foldingStrategy": "indentation",
+    "editor.unfoldOnClickAfterEndOfLine": true,
     "editor.minimap.enabled": false,
     "editor.fontSize": 14,
-	"editor.tabSize": 2,
-    "terminal.integrated.cursorStyle": "line",
+	  "editor.tabSize": 2,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "blink",
-    "files.autoSave": "onWindowChange",
-    "explorer.confirmDragAndDrop": false,
-    "javascript.format.enable": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.markdownlint": true
+    },
     "typescript.format.enable": false,
     "typescript.tsc.autoDetect": "off",
     "typescript.referencesCodeLens.enabled": false,
     "typescript.reportStyleChecksAsWarnings": false,
-    "terminal.integrated.rendererType": "canvas",
-    "breadcrumbs.enabled": true,
     "typescript.locale": "en",
     "typescript.surveys.enabled": false,
-    "debug.toolBarLocation": "docked",
     "typescript.autoClosingTags": true,
     "typescript.check.npmIsInstalled": true,
     "typescript.disableAutomaticTypeAcquisition": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "typescript.suggest.autoImports": true,
+    "typescript.suggest.completeFunctionCalls": false,
+    "typescript.suggest.completeJSDocs": true,
+    "typescript.suggest.enabled": true,
+    "typescript.suggest.paths": true,
+    "typescript.suggestionActions.enabled": true,
+    "javascript.format.enable": false,
     "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.suggest.autoImports": true,
     "java.configuration.updateBuildConfiguration": "automatic",
+    "java.completion.importOrder": [
+      "java",
+			"javax",
+			"com",
+			"org"
+    ],
+    "java.dependency.refreshDelay": 300,
+    "java.project.resourceFilters": [
+      "node_modules",
+      ".git"
+    ],
+    "debug.toolBarLocation": "docked",
     "debug.inlineValues": true,
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.fontSize": 12,
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 1500,
     "files.associations": {
-      "*.json": "jsonc"
+      "*.json": "jsonc",
+      "*.gql": "graphql",
+      "*.graphql": "graphql"
     },
     "files.exclude": {
       "**/.classpath": true,
+      "**/.DS_Store": true,
       "**/.project": true,
       "**/.settings": true,
       "**/.factorypath": true,
@@ -45,26 +93,25 @@
       "**/.svn": true,
       "**/.hg": true,
       "**/CVS": true,
-      "**/.DS_Store": true,
       "**/.next": true
     },
-  "search.exclude": {
-    "**/node_modules/**": true,
-    "**/build/**": true,
-    "**/dist/**": true,
-    "**/windows/**": true,
-    "**/assets/**": true,
-    "**/res/**": true,
-    "**/android/.gradle/**": true,
-    "**/android/.idea/**": true,
-    "**/.docusaurus/**": true
-  },
-    "editor.formatOnSave": false,
-    "eslint.run": "onType",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.markdownlint": true
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/build": true,
+      "**/dist": true,
+      "**/windows": true,
+      "**/assets": true,
+      "**/res": true,
+      "**/logs": true,
+      "**/.gradle": true,
+      "**/.idea": true,
+      "**/.docusaurus": true
     },
+    "eslint.packageManager": "yarn",
+    "eslint.workingDirectories": [
+      { "mode": "auto" }
+    ],
+    "eslint.run": "onType",
     "eslint.alwaysShowStatus": true,
     "eslint.validate": [
       "typescript",
@@ -73,103 +120,98 @@
     "eslint.options": {
       "extensinons": [
         ".ts",
-        ".tsx"
+        ".tsx",
+        ".js",
+        ".html"
       ]
     },
     "php.validate.enable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "less.validate": false,
+    "html.validate.styles": false,
+    "html.validate.scripts": false,
     "todohighlight.isEnable": true,
     "todohighlight.exclude": [
-      "**/node_modules/**",
-      "**/build/**",
-      "**/dist/**",
-      "**/windows/**",
-      "**/assets/**",
-      "**/.vscode/**",
-      "**/.docusaurus/**"
+      "**/node_modules",
+      "**/build",
+      "**/dist",
+      "**/android",
+      "**/ios",
+      "**/windows",
+      "**/assets",
+      "**/logs",
+      "**/.docusaurus"
     ],
     "todohighlight.include": [
       "**/*.ts",
       "**/*.tsx",
+      "**/*.js"
     ],
     "todohighlight.defaultStyle": {
       "color": "#fff",
       "backgroundColor": "transparent",
       "border": "1px solid",
       "borderRadius": "4px",
-      "isWholeLine": false,
+      "isWholeLine": false
     },
     "todohighlight.keywords": [
       {
         "text": " IMPORTANT: ",
         "color": "#fff",
-        "borderColor": "#fff",
+        "borderColor": "#fff"
       },
       {
         "text": " FIX: ",
         "color": "#ef5350",
-        "borderColor": "#ef5350",
+        "borderColor": "#ef5350"
       },
       {
         "text": "TODO:",
         "color": "#ff9800",
         "borderColor": "#ff9800",
-        "backgroundColor": "transparent",
+        "backgroundColor": "transparent"
       },
       {
         "text": " TODO: ",
         "color": "#ff9800",
-        "borderColor": "#ff9800",
+        "borderColor": "#ff9800"
       },
       {
         "text": " ISSUE: ",
         "color": "#ff9800",
-        "borderColor": "#ff9800",
+        "borderColor": "#ff9800"
       },
       {
         "text": " QUALITY: ",
         "color": "#66bb6a",
-        "borderColor": "#66bb6a",
+        "borderColor": "#66bb6a"
       },
       {
         "text": " BRANDING: ",
         "color": "#9a67ea",
-        "borderColor": "#9a67ea",
+        "borderColor": "#9a67ea"
       },
       {
         "text": " SPIKE: ",
         "color": "#8eacbb",
-        "borderColor": "#8eacbb",
+        "borderColor": "#8eacbb"
       },
       {
         "text": " STEP: ",
         "color": "#e0f7fa",
-        "borderColor": "#e0f7fa",
+        "borderColor": "#e0f7fa"
       },
       {
         "text": " NOTE: ",
         "color": "#fff59d",
-        "borderColor": "#fff59d",
+        "borderColor": "#fff59d"
       },
       {
         "text": " DOCS: ",
         "color": "#42a5f5",
-        "borderColor": "#42a5f5",
-      },
-    ],
-    "workbench.list.multiSelectModifier": "alt",
-	"editor.multiCursorModifier": "ctrlCmd",
-	"files.autoSaveDelay": 1500,
-	"java.dependency.refreshDelay": 300,
-    "java.project.resourceFilters": [
-      "node_modules",
-      ".git"
-    ],
-	"javascript.preferences.importModuleSpecifier": "relative",
-    "typescript.preferences.importModuleSpecifier": "relative"
-  },
-  "folders": [
-	{
-		"path": "."
-	}
-],
+        "borderColor": "#42a5f5"
+      }
+    ]
+  }
 }
