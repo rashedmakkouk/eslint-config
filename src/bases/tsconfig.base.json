@@ -12,6 +12,7 @@
     "strict": true,
     "noImplicitAny": false,
     "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

@@ -35,6 +35,7 @@
       "source.fixAll.eslint": true,
       "source.fixAll.markdownlint": true
     },
+    "git.autoRepositoryDetection": false,
     "typescript.format.enable": false,
     "typescript.tsc.autoDetect": "off",
     "typescript.referencesCodeLens.enabled": false,

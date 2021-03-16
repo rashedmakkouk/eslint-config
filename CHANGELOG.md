@@ -1,6 +1,10 @@
 # Changelog
 
-> Go back to [Versions](../index.md#040-in-development)
+## 0.4.0 (2021-03-16)
+
+### Features
+
+- chore: Upgrade package dependencies --latest
 
 ## 0.4.0 (2021-02-22)
 
@@ -64,52 +68,54 @@
 
 ## 0.1.0 (2020-09-29)
 
-### Changed
+### Features
 
-- upgrade: Package dependencies --latest
-- update: ESLint `@typescript/eslint` override rules
-- update: TypeScript `tsconfig.base.json` lib list
+- chore: Upgrade package dependencies --latest
+- feat: Update ESLint `@typescript/eslint` override rules
+- feat: Update TypeScript `tsconfig.base.json` lib list
 
 ## 0.1.0 (2020-09-28)
 
-### Changed
+### Features
 
-- update: Extend `@typescript-eslint/recommended-requiring-type-checking`
-- update: Base config rules
+- feat: Extend `@typescript-eslint/recommended-requiring-type-checking`
+- chore: Update base config rules
 
 ## 0.1.0 (2020-09-24)
 
-### Added
+### Changes
 
-- chore: Create VS Code `core-workspace` default config file
-
-### Changed
-
-- update: `tsconfig.base.json` configuration
-- chore: Update local `tsconfig.json` configuration
 - chore: Rename `config` to `bases`
 - refactor: Build folder structure & script
 - chore: Code cleanup
 
+### Features
+
+- feat: Create VS Code `core-workspace` default config file
+- feat: Update `tsconfig.base.json` configuration
+- chore: Update local `tsconfig.json` configuration
+
 ## 0.1.0 (2020-09-20)
 
-### Changed
+### Changes
+
+- chore: Move base config files to 'src/config'
+
+### Features
 
 - refactor: Suffix all base config files with '*.base.*'
-- chore: Move base config files to 'src/config'
 - chore: Update 'build' scripts
 - chore: Extend package configuration from base config files
 - refactor: 'docs/versions' folder structure
 
 ## 0.1.0 (2020-09-18)
 
-### Added
+### Changes
 
-- chore: Add `.gitmessage.txt` commit template
+- chore: Rename package back to `eslint-config` as supported by ESLint
 
-### Changed
+### Features
 
-- Rename package back to `eslint-config` as supported by ESLint
-- chore: Rename package to `dev-config` for universal tooling
+- feat: Add `.gitmessage.txt` commit template
 - chore: Update `package.json` scripts
 - update: Package docs folder structure
