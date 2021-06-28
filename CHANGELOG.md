@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 (2021-06-27)
+
+### Features
+
+- chore: Upgrade package dependencies --latest
+    - Upgrade Yarn package manager
+
 ## 0.4.0 (2021-04-29)
 
 ### Features
