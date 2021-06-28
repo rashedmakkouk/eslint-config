@@ -4,6 +4,7 @@
 
 ### Features
 
+- feat: Bump package version from `0.4.0` to `0.4.1`
 - chore: Upgrade package dependencies --latest
     - Upgrade Yarn package manager
 
@@ -21,63 +22,69 @@
 
 ## 0.4.0 (2021-02-22)
 
-### Changed
+### Deprecated
 
-- upgrade: Bump package version from `0.3.0` to `0.4.0`
-- deprecated: Remove `docs` directory in favor of `README` file
-- refactor: Migrate `versions` to `CHANGELOG`
+- chore: Remove `docs` directory in favor of `README.md` file
+
+### Changes
+
 - chore: Clean up `code-workspace.base.json` config file
+- chore: Migrate changelog version files to `CHANGELOG`
 - chore: Removed deprecated vendor plugin API
-- upgrade: Package dependencies --latest
+
+### Features
+
+- feat: Bump package version from `0.3.0` to `0.4.0`
+- chore: Upgrade package dependencies --latest
 
 ## 0.4.0 (2021-01-30)
 
-### Changed
+### Changes
 
 - chore: Migrate build script to standalone 'scripts'
-- upgrade: Yarn to v2
 - chore: Update package config files
+
+### Features
+
+- feat: Upgrade Yarn to v2
 
 ## 0.3.0 (2020-12-20)
 
-### Changed
+### Changes
 
-- update: Bump package version to `0.3.0`
 - chore: Update `code-workspace.base.json` config file
-- upgrade: Package `devDependencies` --latest
+
+### Features
+
+- feat: Bump package version to `0.3.0`
+- chore: Upgrade package dependencies --latest
 
 ## 0.2.0 (2020-10-06)
 
-### Added
+### Features
 
-- feature: Add `issue-template.base` base file
-
-### Changed
-
-- upgrade: Package dependencies --latest
+- feat: Add `issue-template.base` base file
+- chore: Upgrade package dependencies --latest
 
 ## 0.2.0 (2020-10-04)
 
-### Added
+### Changes
 
 - chore: Add `@property` modifier to `tsdoc`
 - chore: Add `repository` property to `package.json`
+- chore: Update package configuration files
+- chore: Update local build scripts
 
-### Changed
-
-- refactor: Update package configuration files
-- refactor: Update local build scripts
-
-### Removed
+### Deprecated
 
 - chore: Remove default `rootDir` & `baseUrl` values from `tsconfig.base.json`
 
 ## 0.1.0 (2020-09-30)
 
-### Changed
+### Changes
 
-- update: Separate between `compile` & `build` workflows
-- update: Package will live inside 'build/dist' directory
+- chore: Separate between `compile` & `build` workflows
+- chore: Package will live inside 'build/dist' directory
 
 ## 0.1.0 (2020-09-29)
 
@@ -99,12 +106,12 @@
 ### Changes
 
 - chore: Rename `config` to `bases`
-- refactor: Build folder structure & script
-- chore: Code cleanup
+- chore: Build folder structure & script
+- feat: Create VS Code `core-workspace` default config file
 
 ### Features
 
-- feat: Create VS Code `core-workspace` default config file
+- chore: Code cleanup
 - feat: Update `tsconfig.base.json` configuration
 - chore: Update local `tsconfig.json` configuration
 
@@ -113,22 +120,22 @@
 ### Changes
 
 - chore: Move base config files to 'src/config'
+- chore: Suffix all base config files with '*.base.*'
+- chore: 'docs/versions' folder structure
 
 ### Features
 
-- refactor: Suffix all base config files with '*.base.*'
 - chore: Update 'build' scripts
 - chore: Extend package configuration from base config files
-- refactor: 'docs/versions' folder structure
 
 ## 0.1.0 (2020-09-18)
 
 ### Changes
 
 - chore: Rename package back to `eslint-config` as supported by ESLint
+- chore: Update `package.json` scripts
+- chore: Package docs folder structure
 
 ### Features
 
 - feat: Add `.gitmessage.txt` commit template
-- chore: Update `package.json` scripts
-- update: Package docs folder structure
