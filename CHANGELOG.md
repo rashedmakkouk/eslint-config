@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0 (2021-07-17)
+
+### Features
+
+- chore: Upgrade package dependencies --latest
+
 ## 0.4.0 (2021-06-27)
 
 ### Features
