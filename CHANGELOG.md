@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.6.0 (2021-07-17)
+## 0.4.0 (2021-08-15)
+
+### Features
+
+- feat: Bump package version from `0.4.1` to `0.4.2`
+- chore: Upgrade package dependencies --latest
+
+## 0.4.0 (2021-07-17)
 
 ### Features
 
@@ -43,7 +50,7 @@
 - feat: Bump package version from `0.3.0` to `0.4.0`
 - chore: Upgrade package dependencies --latest
 
-## 0.4.0 (2021-01-30)
+## 0.3.0 (2021-01-30)
 
 ### Changes
 
@@ -54,7 +61,7 @@
 
 - feat: Upgrade Yarn to v2
 
-## 0.3.0 (2020-12-20)
+## 0.2.0 (2020-12-20)
 
 ### Changes
 
