@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 (2022-01-23)
+
+### Features
+
+- feat: Bump package version from `0.4.5` to `0.4.6`
+    - Upgrade package dependencies --latest
+
 ## 0.4.0 (2021-09-18)
 
 ### Features
