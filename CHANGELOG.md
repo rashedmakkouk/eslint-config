@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 (2022-01-26)
+
+### Bug Fixes
+
+- fix: ESLint config typo in 'code-workspace.base.json' file
+
 ## 0.4.0 (2022-01-23)
 
 ### Features

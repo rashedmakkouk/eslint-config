@@ -119,7 +119,7 @@
       "typescriptreact"
     ],
     "eslint.options": {
-      "extensinons": [
+      "extensions": [
         ".ts",
         ".tsx",
         ".js",
