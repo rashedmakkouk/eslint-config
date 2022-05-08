@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 (2022-05-08)
+
+### Features
+
+- feat: Bump package version from `0.4.7` to `0.5.0`
+    - Update package changelog
+    - Upgrade package dependencies --latest
+    - Upgrade Yarn package manager
+
 ## 0.4.0 (2022-04-16)
 
 ### Features
@@ -75,7 +84,7 @@
 
 - chore: Upgrade package dependencies --latest
 
-## 0.4.0 (2021-02-22)
+## 0.3.0 (2021-02-22)
 
 ### Deprecated
 

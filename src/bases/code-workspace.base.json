@@ -71,7 +71,7 @@
       ".git"
     ],
     "debug.toolBarLocation": "docked",
-    "debug.inlineValues": true,
+    "debug.inlineValues": "on",
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.fontSize": 12,
     "debug.javascript.autoAttachFilter": "onlyWithFlag",
