@@ -1,21 +1,27 @@
 # Changelog
 
+## 0.5.0 (2022-05-09)
+
+### Features
+
+- feat: Update `.markdownlint.base.json` attributes
+
 ## 0.4.0 (2022-05-08)
 
 ### Features
 
 - feat: Bump package version from `0.4.7` to `0.5.0`
-    - Update package changelog
-    - Upgrade package dependencies --latest
-    - Upgrade Yarn package manager
+  - Update package changelog
+  - Upgrade package dependencies --latest
+  - Upgrade Yarn package manager
 
 ## 0.4.0 (2022-04-16)
 
 ### Features
 
 - feat: Bump package version from `0.4.6` to `0.4.7`
-    - Upgrade package dependencies --latest
-    - Upgrade Yarn package manager
+  - Upgrade package dependencies --latest
+  - Upgrade Yarn package manager
 
 ## 0.4.0 (2022-01-26)
 
@@ -28,21 +34,21 @@
 ### Features
 
 - feat: Bump package version from `0.4.5` to `0.4.6`
-    - Upgrade package dependencies --latest
+  - Upgrade package dependencies --latest
 
 ## 0.4.0 (2021-09-18)
 
 ### Features
 
 - feat: Bump package version from `0.4.4` to `0.4.5`
-    - Upgrade package dependencies --latest
+  - Upgrade package dependencies --latest
 
 ## 0.4.0 (2021-08-30)
 
 ### Features
 
 - feat: Bump package version from `0.4.3` to `0.4.4`
-    - Upgrade package dependencies --latest
+  - Upgrade package dependencies --latest
 
 ## 0.4.0 (2021-08-22)
 
@@ -70,7 +76,7 @@
 
 - feat: Bump package version from `0.4.0` to `0.4.1`
 - chore: Upgrade package dependencies --latest
-    - Upgrade Yarn package manager
+  - Upgrade Yarn package manager
 
 ## 0.4.0 (2021-04-29)
 
