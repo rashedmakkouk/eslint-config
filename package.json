@@ -1,6 +1,6 @@
 {
   "name": "@limo/eslint-config",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Opinionated linting rules & configuration.",
   "displayName": "@limo/eslint-config",
   "author": {

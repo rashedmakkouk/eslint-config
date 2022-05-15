@@ -4,6 +4,7 @@
 
 ### Features
 
+- feat: Bump package version from `0.5.1` to `0.5.2`
 - chore: Update publish package configuration files
 
 ## 0.5.0 (2022-05-09)
