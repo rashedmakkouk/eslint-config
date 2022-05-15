@@ -1,9 +1,10 @@
 # Development
 #
-**/build
-**/dist
-**/node_modules
-**/*.code-workspace
+build
+dist
+lib
+node_modules
+*.code-workspace
 
 # Files
 #

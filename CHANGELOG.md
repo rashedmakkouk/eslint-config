@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 (2022-05-15)
+
+### Features
+
+- chore: Update publish package configuration files
+
 ## 0.5.0 (2022-05-09)
 
 ### Features

@@ -4,14 +4,19 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
-    "outDir": "build",
+    "outDir": "lib",
     "declaration": true,
-    "declarationMap": true,
-	  "target": "ES6"
+    "allowJs": true,
+    "target": "ES2021",
+    "lib": [
+      "ES2021"
+    ],
+    "noEmitOnError": true
   },
   "exclude": [
     "node_modules",
-    "build"
+    "lib",
+    "scripts"
   ],
   "include": [
     "src/**/*"
