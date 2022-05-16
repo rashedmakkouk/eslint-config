@@ -1,8 +1,8 @@
-# org / eslint-config
+# rashedmakkouk / eslint-config
 
 # Documentation
 
-Package includes all implemenations and linting rules to provide a standardized
+Package includes opinionated implemenations and linting rules to provide a standardized
 coding experience across projects and packages.
 
 Following is the list of tools used to apply linting rules or serve as a source

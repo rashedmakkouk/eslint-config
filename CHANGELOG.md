@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.0 (2022-05-16)
+
+### Features
+
+- feat: Bump package version from `0.5.2` to `0.5.3`
+  - Upgrade package dependencies --latest
+  - Update publish package configuration files
+  - Update package `LICENSE` to `MIT`
+  - Update package visibility to `public`
+  - Update GitHub action configuration file
+  - Refactor `build` script
+  - Update package name
+  - Update `.yarnrc.ym` NPM Registry configuration
+
 ## 0.5.0 (2022-05-15)
 
 ### Features
@@ -34,7 +48,7 @@
 
 ### Bug Fixes
 
-- fix: ESLint config typo in 'code-workspace.base.json' file
+- fix: ESLint config typo in `code-workspace.base.json` file
 
 ## 0.4.0 (2022-01-23)
 
@@ -118,7 +132,7 @@
 
 ### Changes
 
-- chore: Migrate build script to standalone 'scripts'
+- chore: Migrate build script to standalone `scripts`
 - chore: Update package config files
 
 ### Features
@@ -161,7 +175,7 @@
 ### Changes
 
 - chore: Separate between `compile` & `build` workflows
-- chore: Package will live inside 'build/dist' directory
+- chore: Package will live inside `build/dist` directory
 
 ## 0.1.0 (2020-09-29)
 
@@ -196,13 +210,13 @@
 
 ### Changes
 
-- chore: Move base config files to 'src/config'
-- chore: Suffix all base config files with '*.base.*'
-- chore: 'docs/versions' folder structure
+- chore: Move base config files to `src/config`
+- chore: Suffix all base config files with `*.base.*`
+- chore: `docs/versions` folder structure
 
 ### Features
 
-- chore: Update 'build' scripts
+- chore: Update `build` scripts
 - chore: Extend package configuration from base config files
 
 ## 0.1.0 (2020-09-18)

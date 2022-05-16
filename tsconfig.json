@@ -1,6 +1,6 @@
 {
   "extends": "./src/bases/tsconfig.base.json",
-  "display": "Node Package",
+  "display": "Node.js Package",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
