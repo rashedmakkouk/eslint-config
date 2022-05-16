@@ -4,6 +4,7 @@
 
 ### Features
 
+- feat: Bump package version from `0.5.5` to `0.5.6`
 - feat: Bump package version from `0.5.4` to `0.5.5`
   - Update `README.md` file
   - Update `.yarnrc.yml` config file
