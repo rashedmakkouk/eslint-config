@@ -1,12 +1,10 @@
-# rashedmakkouk / eslint-config
+# Overview
 
-# Documentation
+Opinionated implemenations and linting rules to provide a standardized developer experience across
+projects and packages.
 
-Package includes opinionated implemenations and linting rules to provide a standardized
-coding experience across projects and packages.
-
-Following is the list of tools used to apply linting rules or serve as a source
-config file that can be extended.
+Following is the list of tools used to apply linting rules or serve as a source config file that
+can be extended.
 
 ## ESLint
 
