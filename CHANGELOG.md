@@ -4,6 +4,7 @@
 
 ### Features
 
+- chore: Update GitHub action config file
 - feat: Bump package version from `0.5.2` to `0.5.3`
   - Upgrade package dependencies --latest
   - Update publish package configuration files
