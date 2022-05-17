@@ -34,7 +34,7 @@ jobs:
           echo "${{ github.ref }}"
           yarn build
 
-      - name: Publish package to GitHub Packages Registry
+      - name: Publish package to NPM Registry
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}

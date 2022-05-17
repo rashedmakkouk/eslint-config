@@ -4,6 +4,13 @@
 
 ### Features
 
+- feat: Bump package version from `0.5.6` to `0.5.7`
+  - Apply minor changes
+
+## 0.5.0 (2022-05-16)
+
+### Features
+
 - feat: Bump package version from `0.5.5` to `0.5.6`
 - feat: Bump package version from `0.5.4` to `0.5.5`
   - Update `README.md` file
