@@ -47,8 +47,8 @@
   ],
   "scripts": {
     "build:compile": "tsc --build",
-    "build:files": "node ./scripts/build.js",
-    "build": "npm run build:compile && npm run build:files",
+    "build:prepare": "node ./scripts/build.js",
+    "build": "npm run build:compile && npm run build:prepare",
     "uP": "yarn upgrade-interactive",
     "tsc": "tsc"
   },

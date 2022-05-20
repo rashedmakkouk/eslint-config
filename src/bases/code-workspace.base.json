@@ -8,7 +8,6 @@
     // "typescript.tsdk": "C:/Users/rashe/AppData/Roaming/npm/node_modules/typescript/lib",
     "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.rendererType": "canvas",
     "explorer.confirmDragAndDrop": false,
     "breadcrumbs.enabled": true,
     "workbench.colorTheme": "One Dark Pro",
