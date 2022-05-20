@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 (2022-05-20)
+
+- feat: Bump package version from `0.5.7` to `0.6.0`
+- feat: Update package configuration files
+
+### Features
+
 ## 0.5.0 (2022-05-16)
 
 ### Features
@@ -25,7 +32,7 @@
   - Update GitHub action configuration file
   - Refactor `build` script
   - Update package name
-  - Update `.yarnrc.ym` NPM Registry configuration
+  - Update `.yarnrc.yml` NPM Registry configuration
 
 ## 0.5.0 (2022-05-15)
 
