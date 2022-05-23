@@ -1,11 +1,26 @@
 # Changelog
 
+## 0.6.0 (2022-05-23)
+
+### Changes
+
+- chore: Move publish `access` configuration to `package.json`
+- chore: Apply code and configuration updates
+
+### Documentation
+
+- docs: Update package `README.md` file
+
+### Features
+
+- feat: Bump package version from `0.6.0` to `0.7.0`
+
 ## 0.5.0 (2022-05-20)
+
+### Features
 
 - feat: Bump package version from `0.5.7` to `0.6.0`
 - feat: Update package configuration files
-
-### Features
 
 ## 0.5.0 (2022-05-16)
 
