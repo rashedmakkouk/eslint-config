@@ -44,8 +44,11 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "ignorePatterns": [
-    ".eslintrc.js",
-    ".eslintrc.json"
+    ".eslintrc.*",
+    "**/node_modules",
+    "**/build",
+    "**/dist",
+    "**/logs"
   ],
   "rules": {
     "prettier/prettier": [
@@ -55,7 +58,6 @@
         "bracketSpacing": true,
         "endOfLine": "auto",
         "insertPragma": false,
-        "jsxBracketSameLine": false,
         "printWidth": 80,
         "proseWrap": "preserve",
         "requirePragma": false,

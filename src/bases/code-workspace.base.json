@@ -5,7 +5,6 @@
     }
   ],
   "settings": {
-    // "typescript.tsdk": "C:/Users/rashe/AppData/Roaming/npm/node_modules/typescript/lib",
     "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
     "terminal.integrated.cursorStyle": "line",
     "explorer.confirmDragAndDrop": false,
@@ -107,21 +106,24 @@
       "**/.idea": true,
       "**/.docusaurus": true
     },
-    "eslint.packageManager": "yarn",
-    "eslint.workingDirectories": [
-      { "mode": "auto" }
-    ],
     "eslint.run": "onType",
     "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "yarn",
+    "eslint.workingDirectories": [
+      { "mode": "location" }
+    ],
     "eslint.validate": [
       "typescript",
-      "typescriptreact"
+      "typescriptreact",
+      "javascript",
+      "javascriptreact"
     ],
     "eslint.options": {
       "extensions": [
         ".ts",
         ".tsx",
         ".js",
+        ".jsx",
         ".html"
       ]
     },
@@ -146,7 +148,8 @@
     "todohighlight.include": [
       "**/*.ts",
       "**/*.tsx",
-      "**/*.js"
+      "**/*.js",
+      "**/*.jsx"
     ],
     "todohighlight.defaultStyle": {
       "color": "#fff",

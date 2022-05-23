@@ -1,32 +1,5 @@
 const PRINT_WIDTH = 80;
 
-const allowVariables = [
-  'ticket_no',
-  'year_suffix',
-  'original_url',
-  'real_ip',
-  'user_agent',
-  'x_forwarded_for',
-  'disable_comments',
-  'display_name',
-  'photo_album',
-  'edition_type',
-  'first_name',
-  'last_name',
-  'collectible_type',
-  'collectible_types',
-  'alpha_dash_space',
-  'alpha_dash',
-  'alpha_numeric',
-  'alpha_space',
-  'last_seen',
-  'group_name',
-  'birth_date',
-  'serial_no',
-  'node_id',
-  'node_type',
-];
-
 module.exports = {
   env: {
     es6: true,
@@ -41,7 +14,13 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
-  ignorePatterns: ['.eslintrc.js', '.eslintrc.json'],
+  ignorePatterns: [
+    '.eslintrc.*',
+    '**/node_modules',
+    '**/build',
+    '**/dist',
+    '**/logs',
+  ],
   overrides: [
     {
       files: ['*'],
@@ -146,7 +125,6 @@ module.exports = {
         'import/namespace': 'off',
         'import/no-unresolved': 'off',
         'no-void': ['warn', { allowAsStatement: true }],
-        // 'import/no-unresolved': ['off', { ignore: ['uuid/v4'] }],
         'prettier/prettier': [
           'warn',
           {
@@ -154,7 +132,6 @@ module.exports = {
             bracketSpacing: true,
             endOfLine: 'auto',
             insertPragma: false,
-            jsxBracketSameLine: false,
             printWidth: PRINT_WIDTH,
             proseWrap: 'preserve',
             requirePragma: false,
@@ -197,7 +174,8 @@ module.exports = {
       templateStrings: true,
       unicodeCodePointEscapes: true,
     },
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
+    extensions: ['.ts', '.tsx', 'js', '.jsx', '.html'],
     project: './tsconfig.json',
     sourceType: 'module',
   },
