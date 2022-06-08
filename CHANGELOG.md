@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.7.0 (2022-06-08)
+
+### Changed
+
+- chore: Update `README.md` file content
+- chore: Update package license to `BSD 3-Clause License`
+
+### Features
+
+- feat: Bump package version from `0.7.0` to `0.7.1`
+- feat: Add support for `Code Spell Checker` extension
+
 ## 0.6.0 (2022-05-23)
 
 ### Changes
