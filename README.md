@@ -1,4 +1,4 @@
-# eslint-config
+# ESLint Config
 
 Opinionated linting rules providing a standardized developer experience across projects.
 
@@ -7,10 +7,10 @@ Opinionated linting rules providing a standardized developer experience across p
 Install package in your project.
 
 ```shell
-// NPM
+# NPM
 npm install @rashedmakkouk/eslint-config --dev
 
-// Yarn
+# Yarn
 yarn add @rashedmakkouk/eslint-config --dev
 ```
 
@@ -48,12 +48,13 @@ Configure ESLint plugin behavior:
   "eslint.run": "onType", // Options: onType, onSave
   "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn", // Options: yarn, npm
-  /**
-    * Accpets array of string paths you want to apply rules to.
-    * Example: [ "./src", "./libs/client" ]
-    */
+  // Also accpets array of string paths you want to apply rules to.
+  // Example: "eslint.workingDirectories": [ "./src", "./libs/client" ]
   "eslint.workingDirectories": [
-    { "mode": "location" } // Options: location, mode
+    {
+      "mode": "location", // Options: location, auto
+      "pattern": "./src/*/" // Optional: A glob pattern to match a working directory
+    }
   ],
   "eslint.validate": [
     "typescript",
@@ -207,8 +208,7 @@ You may also need to update what file patterns to scan for depending on your pro
     "**/*.js",
     "**/*.jsx",
     "**/*.ts",
-    "**/*.tsx",
-    "**/*.md"
+    "**/*.tsx"
   ],
   "exclude": [
     ...
@@ -232,7 +232,7 @@ plugins or voice your ideas and suggestions.
 - [`Plugins`][discussions-plugins]
 - [`Rules`][discussions-rules]
 - [`Ideas`][discussions-ideas]
-- [`Q&A`][discussion-q-a]
+- [`Q&A`][discussions-q-a]
 
 ## License
 
@@ -251,7 +251,7 @@ license text.
 [discussions-plugins]:https://github.com/rashedmakkouk/eslint-config/discussions/categories/plugins
 [discussions-ideas]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/ideas
 [discussions-rules]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/rules
-[discussion-q-a]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/q-a
+[discussions-q-a]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/q-a
 [issues]: https://github.com/rashedmakkouk/eslint-config/issues
 [mit-license]:https://opensource.org/licenses/MIT
 [mit-license-repo]: https://github.com/rashedmakkouk/eslint-config/blob/main/LICENSE
