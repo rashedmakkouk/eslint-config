@@ -236,9 +236,9 @@ plugins or voice your ideas and suggestions.
 
 ## License
 
-This package is available under the [MIT license][mit-license]. It also includes external libraries
-that are available under a variety of licenses. See [LICENSE][mit-license-repo] for the full
-license text.
+This package is available under the [BSD 3-Clause license][bsd-3-clause-license]. It also includes
+external libraries that are available under a variety of licenses. See [LICENSE][license-file] for
+the full license text.
 
 [vs-marketplace-vscode-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [vs-marketplace-vscode-markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
@@ -253,6 +253,6 @@ license text.
 [discussions-rules]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/rules
 [discussions-q-a]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/q-a
 [issues]: https://github.com/rashedmakkouk/eslint-config/issues
-[mit-license]:https://opensource.org/licenses/MIT
-[mit-license-repo]: https://github.com/rashedmakkouk/eslint-config/blob/main/LICENSE
+[bsd-3-clause-license]: https://opensource.org/licenses/BSD-3-Clause
+[license-file]: https://github.com/rashedmakkouk/eslint-config/blob/main/LICENSE
 [vscode-workspace]: https://code.visualstudio.com/docs/editor/workspaces

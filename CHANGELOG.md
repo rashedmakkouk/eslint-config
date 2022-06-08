@@ -9,6 +9,7 @@
 
 ### Features
 
+- feat: Bump package version from `0.7.2` to `0.7.3`
 - feat: Bump package version from `0.7.1` to `0.7.2`
 - feat: Bump package version from `0.7.0` to `0.7.1`
 - feat: Add support for `Code Spell Checker` extension
