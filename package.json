@@ -1,6 +1,6 @@
 {
   "name": "@rashedmakkouk/eslint-config",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Opinionated linting rules and configurations.",
   "displayName": "@rashedmakkouk/eslint-config",
   "author": {
@@ -8,7 +8,7 @@
     "email": "rashed.makkouk@outlook.com",
     "url": "https://www.twitter.com/rashedmakkouk"
   },
-  "license": "BSD 3-Clause License",
+  "license": "BSD 3-Clause",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
