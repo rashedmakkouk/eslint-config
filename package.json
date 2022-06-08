@@ -8,7 +8,7 @@
     "email": "rashed.makkouk@outlook.com",
     "url": "https://www.twitter.com/rashedmakkouk"
   },
-  "license": "MIT",
+  "license": "BSD 3-Clause License",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
@@ -41,7 +41,6 @@
   },
   "files": [
     "lib/**/*",
-    "**/*.d.ts",
     "yarn.lock",
     "CHANGELOG.md",
     "CONTRIBUTING.md"
