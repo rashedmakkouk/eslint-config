@@ -1,8 +1,20 @@
 # Changelog
 
+## 0.7.0 (2022-10-23)
+
+### Changes
+
+- chore: Upgrade package dependencies --latest
+- chore: Upgrade Yarn from `3.2.0` to `3.2.4`
+
+### Features
+
+- feat: Bump package version from `0.7.3` to `0.7.4`
+  - Update package changelog
+
 ## 0.7.0 (2022-06-08)
 
-### Changed
+### Changes
 
 - chore: Update `README.md` file content
 - chore: Update package license to `BSD 3-Clause License`
