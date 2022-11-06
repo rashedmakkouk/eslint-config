@@ -219,34 +219,12 @@
         "borderColor": "#42a5f5"
       }
     ],
+    "cSpell.enabled": true,
     "cSpell.language": "en,en-US",
-    "cSpell.enableFiletypes": [
-      "!c",
-      "!cpp",
-      "!csharp",
-      "!css",
-      "!git-commit",
-      "!go",
-      "!graphql",
-      "!handlebars",
-      "!haskell",
-      "!html",
-      "!jade",
-      "!java",
-      "!jupyter",
-      "!latex",
-      "!less",
-      "!php",
-      "!pug",
-      "!python",
-      "!rust",
-      "!scala",
-      "!scss",
-      "!swift",
-      "!vue"
-    ],
-    "cSpell.words": [
-      "toolset"
+    "cSpell.ignorePaths": [
+      "node_modules",
+      "dist",
+      "build"
     ]
   }
 }

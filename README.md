@@ -16,10 +16,10 @@ yarn add @rashedmakkouk/eslint-config --dev
 
 ## IDE Integration
 
-## VS Code
+### Visual Studio Code
 
 Before you begin, it is recommended that you use [VS Code Workspace][vscode-workspace]
-configuration file insde your project. You may use your own, or get a copy of
+configuration file inside your project. You may use your own, or get a copy of
 `code-workspace.base.json` file provided with this package from `bases` directory that you can use
 out-of-the-box.
 
@@ -48,7 +48,7 @@ Configure ESLint plugin behavior:
   "eslint.run": "onType", // Options: onType, onSave
   "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn", // Options: yarn, npm
-  // Also accpets array of string paths you want to apply rules to.
+  // Also accepts array of string paths you want to apply rules to.
   // Example: "eslint.workingDirectories": [ "./src", "./libs/client" ]
   "eslint.workingDirectories": [
     {
@@ -73,9 +73,9 @@ Configure ESLint plugin behavior:
 }
 ```
 
-## Configuration
+## IDE Extensions
 
-> Update `./node_modules/..` path, where referenced, as needed if you are working in a monorepo or
+> Update `./node_modules/*` path, where referenced, as needed if you are working in a monorepo or
 > you don't have the directory at the root of your project.
 
 ### [eslint][eslint-npm]
@@ -220,6 +220,23 @@ You may also need to update what file patterns to scan for depending on your pro
 }
 ```
 
+### [cspell][vs-marketplace-vscode-code-spell-checker]
+
+`Code Spell Checker` is a basic spell checker to help catch common spelling errors.
+
+Add the following configuration to `cspell.json` file in the root of your project to ignore custom
+words.
+
+> cspell.json
+
+```json
+{
+  "words": [
+    "ignore-word"
+  ]
+}
+```
+
 ## Git
 
 Git commit linting and templates [WIP].
@@ -252,7 +269,7 @@ the full license text.
 [discussions-ideas]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/ideas
 [discussions-rules]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/rules
 [discussions-q-a]: https://github.com/rashedmakkouk/eslint-config/discussions/categories/q-a
-[issues]: https://github.com/rashedmakkouk/eslint-config/issues
 [bsd-3-clause-license]: https://opensource.org/licenses/BSD-3-Clause
 [license-file]: https://github.com/rashedmakkouk/eslint-config/blob/main/LICENSE
 [vscode-workspace]: https://code.visualstudio.com/docs/editor/workspaces
+[vs-marketplace-vscode-code-spell-checker]:https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
