@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.7.0 (2022-11-06)
+
+### Features
+
+- feat: Bump package version from `0.7.4` to `0.7.5`
+  - Upgrade package dependencies --latest
+  - Update package changelog
+- feat: Add `Code Spell Checker` extension configuration
+  - Add default configuration in `bases/code-workspace.base.json` file
+  - Add `cspell` guide in `README.md`
+  - Integrate `cspell` with this package
+
 ## 0.7.0 (2022-10-23)
 
 ### Changes

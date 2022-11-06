@@ -1,6 +1,6 @@
 {
   "name": "@rashedmakkouk/eslint-config",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Opinionated linting rules and configurations.",
   "displayName": "@rashedmakkouk/eslint-config",
   "author": {
@@ -53,12 +53,12 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "@types/node": "^18.11.3",
-    "@typescript-eslint/eslint-plugin": "^5.40.1",
-    "@typescript-eslint/parser": "^5.40.1",
-    "eslint": "^8.26.0",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -71,7 +71,7 @@
     "typescript": "4.8.4"
   },
   "devDependencies": {
-    "@types/eslint": "^8.4.7",
+    "@types/eslint": "^8.4.10",
     "@types/shelljs": "^0.8.11",
     "shelljs": "^0.8.5",
     "ts-node": "^10.9.1"
