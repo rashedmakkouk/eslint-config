@@ -28,12 +28,14 @@
     "sourceType": "module"
   },
   "env": {
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "plugins": [
     "prettier",
     "@typescript-eslint",
-    "eslint-plugin-tsdoc"
+    "eslint-plugin-tsdoc",
+    "deprecation"
   ],
   "extends": [
     "plugin:prettier/recommended",
@@ -51,6 +53,7 @@
     "**/logs"
   ],
   "rules": {
+    "deprecation/deprecation": "warn",
     "prettier/prettier": [
       "warn",
       {
