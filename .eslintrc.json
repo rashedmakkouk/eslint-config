@@ -35,12 +35,12 @@
     "prettier",
     "@typescript-eslint",
     "eslint-plugin-tsdoc",
+    "import",
     "deprecation"
   ],
   "extends": [
     "plugin:prettier/recommended",
-    // "plugin:import/errors",
-    "plugin:import/warnings",
+    "plugin:import/recommended",
     "plugin:import/typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
@@ -54,6 +54,7 @@
   ],
   "rules": {
     "deprecation/deprecation": "warn",
+    "import/no-unresolved": "error",
     "prettier/prettier": [
       "warn",
       {
@@ -93,6 +94,17 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        // Always try to resolve types under `<root>@types` directory even it
+        // doesn't contain any source code.
+        "alwaysTryTypes": true,
+        "project": [
+          "tsconfig.json",
+          "apps/*/tsconfig.json",
+          "libs/*/tsconfig.json",
+          "packages/*/tsconfig.json"
+        ]
       }
     }
   }
