@@ -35,6 +35,7 @@
     "prettier",
     "@typescript-eslint",
     "eslint-plugin-tsdoc",
+    "simple-import-sort",
     "import",
     "deprecation"
   ],
@@ -71,6 +72,11 @@
         "trailingComma": "es5"
       }
     ],
+    "import/first": "error",
+    "import/newline-after-import": "off",
+    "import/no-duplicates": "error",
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": "warn",
     "sort-keys": [
       1,
       "asc",

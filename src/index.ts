@@ -179,7 +179,12 @@ module.exports = {
     project: './tsconfig.json',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
+  plugins: [
+    '@typescript-eslint',
+    'eslint-plugin-tsdoc',
+    'simple-import-sort',
+    'import',
+  ],
   rules: {
     curly: ['error', 'all'],
     'dot-notation': 'off',
@@ -216,15 +221,12 @@ module.exports = {
     'prefer-const': 'warn',
     'require-atomic-updates': 'off',
     'require-await': 'warn',
-    'sort-imports': [
-      'warn',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
-      },
-    ],
+    'sort-imports': 'off',
+    'import/first': 'error',
+    'import/newline-after-import': 'off',
+    'import/no-duplicates': 'error',
+    'simple-import-sort/exports': 'warn',
+    'simple-import-sort/imports': 'warn',
     'sort-keys': [
       'warn',
       'asc',
