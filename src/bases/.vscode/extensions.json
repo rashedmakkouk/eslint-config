@@ -5,16 +5,10 @@
     "vscode-icons-team.vscode-icons",
     "naumovs.color-highlight",
     "wayou.vscode-todo-highlight",
-    "vscjava.vscode-java-pack",
     "davidanson.vscode-markdownlint",
     "eamodio.gitlens",
     "ms-vscode-remote.vscode-remote-extensionpack",
-    "ms-azuretools.vscode-docker",
-    "ms-dotnettools.csharp",
 	  "ms-vscode.powershell",
-    "ms-kubernetes-tools.vscode-kubernetes-tools",
-	  "donjayamanne.githistory",
-    "ms-edgedevtools.vscode-edge-devtools",
     "streetsidesoftware.code-spell-checker"
   ]
 }

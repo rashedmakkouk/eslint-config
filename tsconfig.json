@@ -1,22 +1,21 @@
 {
   "extends": "./src/bases/tsconfig.base.json",
-  "display": "Node.js Package",
+  "display": "@rashedmakkouk/eslint-config",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "lib",
     "declaration": true,
     "allowJs": true,
-    "target": "ES2021",
+    "target": "ES2022",
     "lib": [
-      "ES2021"
+      "ES2022"
     ],
     "noEmitOnError": true
   },
   "exclude": [
     "node_modules",
-    "lib",
-    "scripts"
+    "lib"
   ],
   "include": [
     "src/**/*"

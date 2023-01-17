@@ -1,4 +1,5 @@
-const {cp, exec, mkdir, rm, test} = require('shelljs');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { cp } = require('shelljs');
 
 const outDir = './lib';
 

@@ -1,6 +1,8 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2022,
     "ecmaFeatures": {
       "arrowFunctions": true,
       "blockBindings": true,
@@ -9,7 +11,6 @@
       "destructuring": true,
       "forOf": true,
       "generators": true,
-      "jsx": false,
       "module": true,
       "objectLiteralComputedProperties": true,
       "objectLiteralDuplicateProperties": true,
@@ -23,16 +24,10 @@
       "templateStrings": true,
       "unicodeCodePointEscapes": true
     },
-    "ecmaVersion": 2020,
-    "project": "./tsconfig.json",
-    "sourceType": "module"
-  },
-  "env": {
-    "es6": true,
-    "node": true
+    "extensions": [".ts", ".js"],
+    "project": ["./tsconfig.eslint.json"]
   },
   "plugins": [
-    "prettier",
     "@typescript-eslint",
     "eslint-plugin-tsdoc",
     "simple-import-sort",
@@ -40,26 +35,106 @@
     "deprecation"
   ],
   "extends": [
-    "plugin:prettier/recommended",
+    "eslint:recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended"
   ],
-  "ignorePatterns": [
-    ".eslintrc.*",
-    "**/node_modules",
-    "**/build",
-    "**/dist",
-    "**/logs"
-  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": ["**/node_modules", "**/build", "**/dist", "**/logs"],
+  "settings": {
+    "import/parsers:": {
+      "@typescript-eslint/parser": [".ts", ".js"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["tsconfig.json"]
+      }
+    }
+  },
   "rules": {
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": [
+      "warn",
+      {
+        "allowThrowingAny": true,
+        "allowThrowingUnknown": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-var-requires": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    "@typescript-eslint/restrict-template-expressions": [
+      "warn",
+      {
+        "allowBoolean": true,
+        "allowNumber": true
+      }
+    ],
+    "arrow-parens": ["error", "always"],
+    "curly": ["error", "all"],
     "deprecation/deprecation": "warn",
+    "dot-notation": "off",
     "import/no-unresolved": "error",
+    "lines-around-comment": [
+      "warn",
+      {
+        "beforeBlockComment": false,
+        "afterBlockComment": false,
+        "beforeLineComment": false,
+        "afterLineComment": false,
+        "allowArrayStart": true,
+        "allowArrayEnd": true,
+        "allowBlockStart": true,
+        "allowBlockEnd": true,
+        "allowObjectStart": true,
+        "allowObjectEnd": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "ignorePattern": "/* eslint-disable|^s*import|export*",
+        "ignoreUrls": true
+      }
+    ],
+    "multiline-comment-style": ["warn", "starred-block"],
+    "no-confusing-arrow": ["error", { "allowParens": false }],
+    "no-console": "warn",
+    "no-mixed-operators": "error",
+    "no-multiple-empty-lines": ["warn", { "max": 1 }],
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "no-unexpected-multiline": "error",
+    "no-use-before-define": [
+      "error",
+      {
+        "allowNamedExports": false,
+        "classes": true,
+        "functions": true,
+        "variables": true
+      }
+    ],
+    "no-var": "error",
+    "object-shorthand": ["error", "properties"],
+    "prefer-const": "warn",
+    "prefer-template": "error",
     "prettier/prettier": [
       "warn",
       {
-        "arrowParens": "always",
         "bracketSpacing": true,
         "endOfLine": "auto",
         "insertPragma": false,
@@ -72,46 +147,31 @@
         "trailingComma": "es5"
       }
     ],
-    "import/first": "error",
-    "import/newline-after-import": "off",
-    "import/no-duplicates": "error",
-    "simple-import-sort/exports": "warn",
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": false,
+        "avoidEscape": true
+      }
+    ],
+    "quote-props": ["error", "as-needed"],
+    "sort-imports": "off",
     "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "import/first": "error",
+    "import/newline-after-import": "warn",
+    "import/no-duplicates": "error",
     "sort-keys": [
-      1,
+      "warn",
       "asc",
       {
         "caseSensitive": true,
         "natural": false
       }
     ],
-    "sort-vars": [
-      1,
-      {
-        "ignoreCase": false
-      }
-    ],
-    "tsdoc/syntax": 1
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [ ".ts", ".tsx" ]
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "typescript": {
-        // Always try to resolve types under `<root>@types` directory even it
-        // doesn't contain any source code.
-        "alwaysTryTypes": true,
-        "project": [
-          "tsconfig.json",
-          "apps/*/tsconfig.json",
-          "libs/*/tsconfig.json",
-          "packages/*/tsconfig.json"
-        ]
-      }
-    }
+    "sort-vars": ["warn", { "ignoreCase": false }],
+    "spaced-comment": ["error", "always", { "exceptions": ["-", "+"] }],
+    "tsdoc/syntax": "warn"
   }
 }
