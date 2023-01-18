@@ -1,5 +1,70 @@
 # Changelog
 
+## 0.7.0 (2023-01-18)
+
+### Features
+
+- feat: Bump package version from `0.7.5` to `0.8.0`
+  - Update package `CHANGELOG`
+- feat: Update package `README` content
+  - Add `Supported File Extensions` section
+  - Add `Ignored Patterns` section
+  - Add `Customizing Base Configuration` section
+  - Add `Using Plugins` section
+  - Add `Configuring Rules` section
+  - Add `Usage with TypeScript` section
+  - Add `Command Line Interface` section
+  - Add `What`s Included` section
+  - Add `FAQ` section
+- feat: Refactor module implementation
+  - Upgrade ECMAScript syntax support to `2022`
+  - Add `eslint-import-resolver-typescript` configuration
+  - Add `eslint-plugin-deprecation` configuration
+  - Add `@typescript-eslint/recommended-requiring-type-checking` rules
+  - Add `@typescript-eslint/strict` select rules
+  - Update `@typescript-eslint/naming-convention` rule
+  - Migrate `Indent` rule to `Prettier`
+  - Add support for loading `tsconfig.eslint.json`
+  - Add support for loading `tsconfig.json` files from `monorepo` directory patterns
+  - Enable rules previously set to `off`
+  - Add explanation and usage guidelines to configured rules
+  - Update loaded `plugins` priority
+  - Reorder configuration properties
+  - Extract reusable configuration values to variables
+  - Update `tsconfig.base.json` configuration in `bases`
+- feat: Update package configuration files
+  - Update ECMAScript version to `2022`
+  - Update ESLint rules in `.eslintrc.json`
+  - Update `tsconfig.json` configuration
+  - Add `tsconfig.eslint.json` file
+  - Update `build.js` script
+  - Update ignored words in `cspell.json`
+  - Update .vscode `extensions.json` recommendations
+  - Update `Year` in `LICENSE` file
+  - Update package dependencies --latest
+
+## 0.7.0 (2023-01-15)
+
+### Features
+
+- feat: Add support for `eslint-import-resolver-node`
+- feat: Add support for `eslint-plugin-simple-import-sort` (#3)
+  - Add `simple-import-sort` plugin
+  - Add import/export linting rules
+  - Closes #3
+
+## 0.7.0 (2023-01-09)
+
+### Features
+
+- feat: Add support for `eslint-import-resolver-typescript`
+- feat: Add support for `eslint-plugin-deprecation`
+- feat: Upgrade package dependencies
+  - Upgrade `yarn` to `3.3.1`
+  - Upgrade `typescript` to `4.9.4`
+  - Upgrade `eslint` to `8.31.0`
+  - Upgrade package dependencies --latest
+
 ## 0.7.0 (2022-11-06)
 
 ### Features
