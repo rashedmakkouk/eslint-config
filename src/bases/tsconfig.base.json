@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Recommended",
+  "display": "tsconfig Recommended",
   "compilerOptions": {
     "module": "commonjs",
     "declaration": false,
@@ -13,11 +13,11 @@
     "noImplicitAny": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "noEmitOnError": false,
+    "noEmitOnError": true,
     "skipLibCheck": true,
 	  "experimentalDecorators": true,
     "types": [
