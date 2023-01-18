@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0 (2023-01-18)
+
+- feat: Bump package version from `0.8.0` to `0.8.1`
+  - Update package `CHANGELOG`
+- feat: Update 'peerDependencies' dependency tree
+
 ## 0.7.0 (2023-01-18)
 
 ### Features

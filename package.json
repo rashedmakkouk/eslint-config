@@ -1,6 +1,6 @@
 {
   "name": "@rashedmakkouk/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Opinionated linting rules and configurations.",
   "displayName": "@rashedmakkouk/eslint-config",
   "author": {
