@@ -99,8 +99,7 @@ To **Enable** JSX syntax support, add the following configuration:
 }
 ```
 
-You may also want to install and configure [eslint-plugin-react][eslint-plugin-react-npm] for
-language-specific rules, and add the following configuration:
+If you use [eslint-plugin-react][eslint-plugin-react-npm], add the following configuration:
 
 > .eslintrc.json
 
@@ -120,7 +119,7 @@ language-specific rules, and add the following configuration:
 This package can be used in back-end Node.js projects out-of-the-box.
 
 You may also want to install and configure [eslint-plugin-node][eslint-plugin-node-npm] for
-language-specific rules, and add the following configuration:
+language-specific rules, then add the following configuration:
 
 > .eslintrc.json
 
@@ -303,8 +302,8 @@ If you choose to opt out of this pattern, tsconfig.json file will be loaded inst
 
 This package supports loading the following tsconfig file patterns:
 
-- tsconfig.json (scanned and loaded by both ESLint and TypeScript ESLint Plugin)
-- tsconfig.eslint.json (scanned and loaded only by ESLint)
+- tsconfig.json (scanned and loaded by both ESLint 'parser' and 'import/resolver' plugin)
+- tsconfig.eslint.json (scanned and loaded only by ESLint 'parser')
 
 #### Supported Directory Patterns
 
@@ -314,7 +313,7 @@ Directory patterns support both standard and monorepo projects and look for tsco
 - packages/*/
 - libs/*/
 - apps/*/
-- doc/
+- docs/
 
 #### TSConfig ([Reference][tsconfig-reference])
 
@@ -733,6 +732,21 @@ tsconfig.eslint.json file.
 
 Also check [Troubleshooting and FAQ][typescript-eslint-troubleshooting] official documentation for
 more information on this and other issues.
+
+### You must therefore provide a value for the "parserOptions.project" property for @typescript-eslint/parser
+
+This can happen when ESLint TypeScript parser fails to load a 'tsconfig.json' file inside your
+project directory, particularly in a monorepo project.
+
+To fix this issue, add the following configuration to your '.eslintrc.*' file:
+
+```json
+{
+  "parserOptions": {
+    "project": ["./tsconfig.json"] // Add this.
+  }
+}
+```
 
 ### What does --fix-dry-run supposed to do
 

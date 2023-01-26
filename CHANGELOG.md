@@ -1,10 +1,25 @@
 # Changelog
 
+## 0.8.0 (2023-01-26)
+
+### Changes
+
+- chore: Drop `parserOptions.project` Node Glob pattern in favor of explicit paths (#4)
+- chore: Update package configuration files
+  - Update import/resolver `project` path in `.eslintrc.json`
+  - Add contact handle information in `LICENSE`
+
+### Features
+
+- feat: Bump package version from `0.8.1` to `0.8.2`
+  - Update package `README.md`
+  - Update package `CHANGELOG.md`
+
 ## 0.8.0 (2023-01-18)
 
 - feat: Bump package version from `0.8.0` to `0.8.1`
   - Update package `CHANGELOG`
-- feat: Update 'peerDependencies' dependency tree
+- feat: Update `peerDependencies` dependency tree
 
 ## 0.7.0 (2023-01-18)
 
