@@ -4,6 +4,8 @@
 
 ### Changes
 
+- chore: Update `parserOptions.project` and `typescript.project` path patterns
+  - Closes #4
 - chore: Drop `parserOptions.project` Node Glob pattern in favor of explicit paths (#4)
 - chore: Update package configuration files
   - Update import/resolver `project` path in `.eslintrc.json`
@@ -11,6 +13,8 @@
 
 ### Features
 
+- feat: Bump package version from `0.8.2` to `0.8.3`
+  - Update release `CHANGELOG.md`
 - feat: Bump package version from `0.8.1` to `0.8.2`
   - Update package `README.md`
   - Update package `CHANGELOG.md`
