@@ -4,31 +4,22 @@ const RULE_OFF = 'off';
 const RULE_WARN = 'warn';
 
 const ecmaVersion = 2022;
-/**
- * Dropped 'parserOptions.project' Node Glob pattern for explicit paths.
- * {@link https://github.com/isaacs/node-glob/blob/f5a57d3d6e19b324522a3fa5bdd5075fd1aa79d1/README.md#glob-primer | Node Glob}
- *
- * See Issue #4.
- */
-const projectDefaultPaths = [
-  './tsconfig.json',
-  './apps/*/tsconfig.json',
-  './libs/*/tsconfig.json',
-  './packages/*/tsconfig.json',
-  './docs/tsconfig.json',
-];
-const projectEslintPaths = [
-  './tsconfig.eslint.json',
-  './apps/*/tsconfig.eslint.json',
-  './libs/*/tsconfig.eslint.json',
-  './packages/*/tsconfig.eslint.json',
-  './docs/tsconfig.eslint.json',
-];
-const extensions = ['.ts', '.tsx', '.js', '.jsx'];
-const ignorePatterns = ['**/node_modules', '**/build', '**/dist'];
 
 const PRINT_WIDTH = 80;
 const TAB_WIDTH = 2;
+
+const projectDefaultPaths = [
+  './tsconfig.json',
+  './+(apps|libs|packages)/*/tsconfig.json',
+  './+(docs)/tsconfig.json',
+];
+const projectEslintPaths = [
+  './tsconfig.eslint.json',
+  './+(apps|libs|packages)/*/tsconfig.eslint.json',
+  './+(docs)/tsconfig.eslint.json',
+];
+const extensions = ['.ts', '.tsx', '.js', '.jsx'];
+const ignorePatterns = ['**/node_modules', '**/build', '**/dist'];
 
 module.exports = {
   parser: '@typescript-eslint/parser',
