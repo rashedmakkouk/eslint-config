@@ -1,6 +1,19 @@
 # Changelog
 
+## 0.8.0 (2024-02-02)
+
+### Changes
+
+- chore: Upgrade `yarn.lock` file
+
+### Features
+
+- feat: Bump package version from `0.8.4` to `0.8.5`
+  - Update release `CHANGELOG.md`
+
 ## 0.8.0 (2024-02-01)
+
+### Features
 
 - feat: Bump package version from `0.8.3` to `0.8.4`
   - Update release `CHANGELOG.md`
