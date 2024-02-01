@@ -2,12 +2,18 @@
 
 ## 0.8.0 (2024-02-02)
 
+### Bug Fixes
+
+- fix: Add TS file extensions support to `import/resolver` and `import/parsers`
+
 ### Changes
 
 - chore: Upgrade `yarn.lock` file
 
 ### Features
 
+- feat: Bump package version from `0.8.5` to `0.8.6`
+  - Update release `CHANGELOG.md`
 - feat: Bump package version from `0.8.4` to `0.8.5`
   - Update release `CHANGELOG.md`
 
