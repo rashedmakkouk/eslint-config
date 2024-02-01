@@ -18,7 +18,7 @@ const projectEslintPaths = [
   './+(apps|libs|packages)/*/tsconfig.eslint.json',
   './+(docs)/tsconfig.eslint.json',
 ];
-const extensions = ['.ts', '.tsx', '.js', '.jsx'];
+const defaultExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 const ignorePatterns = ['**/node_modules', '**/build', '**/dist'];
 
 module.exports = {
@@ -47,7 +47,7 @@ module.exports = {
       templateStrings: true,
       unicodeCodePointEscapes: true,
     },
-    extensions: [...extensions, '.html'],
+    extensions: [...defaultExtensions, '.html'],
     project: [...projectDefaultPaths, ...projectEslintPaths],
   },
   plugins: [
@@ -76,11 +76,11 @@ module.exports = {
   ignorePatterns,
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': extensions,
+      '@typescript-eslint/parser': [...defaultExtensions, '.d.ts'],
     },
     'import/resolver': {
       node: {
-        extensions: ['.js', 'jsx'],
+        extensions: [...defaultExtensions, '.d.ts'],
       },
       typescript: {
         /**
