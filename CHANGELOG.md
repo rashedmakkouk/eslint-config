@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 (2024-02-01)
+
+- feat: Bump package version from `0.8.3` to `0.8.4`
+  - Update release `CHANGELOG.md`
+- feat: Upgrade package dependencies --latest
+  - Upgrade Yarn from `3.3.1` to `4.1.0`
+  - Upgrade TypeScript from `4.9.4` to `5.3.3`
+
 ## 0.8.0 (2023-01-26)
 
 ### Changes
